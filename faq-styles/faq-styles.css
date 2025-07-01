@@ -189,12 +189,20 @@
 }
 
 @media screen and (max-width: 1130px) {
-  a#header__dropdown {
+  a.header__dropdown {
     text-decoration: none !important;
   }
 
-  a#header__dropdown::after {
+  a.header__dropdown::after {
     content: none !important;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
+
+  .has-submenu.active .submenu {
+    display: block;
   }
 
   .submenu {
@@ -214,14 +222,10 @@
   }
 
   .header__list {
-    overflow: visible !important;
+    overflow: none !important;
   }
   .dropdown-menu {
     padding-bottom: 20px;
-  }
-
-  .dropdown-menu {
-    display: none;
   }
 
   .dropdown.active .dropdown-menu {

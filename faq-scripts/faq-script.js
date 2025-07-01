@@ -24,11 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
     toggle.addEventListener("click", (e) => {
       if (window.innerWidth <= 1130) {
         e.preventDefault();
-        // Закрыть все dropdown кроме текущего
         dropdowns.forEach((dd) => {
           if (dd !== dropdown) dd.classList.remove("active");
         });
-        // Тогглим текущий dropdown
         dropdown.classList.toggle("active");
       }
     });
