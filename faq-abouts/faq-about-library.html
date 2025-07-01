@@ -34,8 +34,10 @@
       name="description"
       content='ГУ "ВИТЕБСКАЯ ОБЛАСТНАЯ БИБЛИОТЕКА ИМ. В.И. ЛЕНИНА"'
     />
+
     <meta name="generator" content="Joomla! - Open Source Content Management" />
     <title>Часто задаваемые вопросы о библиотеке</title>
+    <link rel="icon" href="../faq-imgs/logo-favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../faq-styles/faq-styles.css" />
   </head>
   <body>
@@ -49,12 +51,82 @@
 
       <ul class="header__list">
         <li class="header__item"><a href="/index.php/ru/">Главная</a></li>
-        <li class="header__item"><a id="header__dropdown">О библиотеке</a></li>
-        <li class="header__item"><a>Сотрудничество</a></li>
-        <li class="header__item"><a>Ресурсы</a></li>
+        <li class="header__item dropdown">
+          <a id="header__dropdown">О библиотеке</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Адрес</a></li>
+            <li><a href="#">Режим работы</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li class="has-submenu">
+              <a id="header__dropdown" href="#">Структура</a>
+              <ul class="submenu">
+                <li><a href="#">Функциональные отделы</a></li>
+                <li><a href="#">Отделы обслуживания</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Вышестоящая организация</a></li>
+            <li><a href="#">Обращение граждан и юридеческих лиц</a></li>
+            <li><a href="#">Правила пользования</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">История</a></li>
+            <li><a href="#">Библиотека в СМИ</a></li>
+            <li><a href="#">Библиотека в 2024 году</a></li>
+          </ul>
+        </li>
+
+        <li class="header__item dropdown">
+          <a id="header__dropdown">Сотрудничество</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Национальная библиотека Беларуси</a></li>
+            <li>
+              <a href="#"
+                >Представительство Россотрудничества в Республике Беларусь</a
+              >
+            </li>
+            <li><a href="#">Псковская ОУНБ</a></li>
+            <li><a href="#">Смоленская ОУБ имени А. Т. Твардовского</a></li>
+            <li>
+              <a href="#">Президентская библиотека имени Б. Н. Ельцина</a>
+            </li>
+            <li>
+              <a href="#">Музей-заповедник А. С. Пушкина «Михайловское»</a>
+            </li>
+            <li><a href="#">Областная газета «Витебские вести»</a></li>
+            <li><a href="#">Городская газета «Витьбичи»</a></li>
+            <li><a href="#">Бизнес-портал Витебска Vitebsk.biz</a></li>
+            <li><a href="#">Витебский городской портал Gorodvitebsk.by</a></li>
+          </ul>
+        </li>
+        <li class="header__item dropdown">
+          <a id="header__dropdown">Ресурсы</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Электронные системы и базы</a></li>
+            <li>
+              <a href="#"
+                >Віцебск: рэальная і папулярная гісторыя роднага горада</a
+              >
+            </li>
+            <li><a href="#">Виртуальные проекты</a></li>
+            <li><a href="#">Выставки on-line</a></li>
+            <li>
+              <a href="#">Издания</a>
+            </li>
+            <li>
+              <a href="#">Подписка</a>
+            </li>
+            <li><a href="#">Тематический год в Беларуси</a></li>
+            <li><a href="#">Юбилейный год</a></li>
+          </ul>
+        </li>
         <li class="header__item"><a>Электронный каталог</a></li>
         <li class="header__item"><a>Ссылки</a></li>
-        <li class="header__item"><a>Авторизация</a></li>
+        <li class="header__item dropdown">
+          <a id="header__dropdown">Авторизация</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Вход на сайта</a></li>
+            <li><a href="#">Регистрация</a></li>
+          </ul>
+        </li>
       </ul>
 
       <div class="header__burger-search">
@@ -69,6 +141,7 @@
             name="searchword"
             maxlength="20"
             placeholder="Поиск..."
+            autocomplete="off"
           />
         </form>
 
