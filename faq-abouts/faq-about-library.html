@@ -46,17 +46,40 @@
           <img src="../faq-imgs/logo2.png" id="header__logo2" alt="logo" />
         </a>
       </div>
+
       <ul class="header__list">
         <li class="header__item"><a href="/index.php/ru/">Главная</a></li>
-        <li class="header__item">
-          <a id="header__dropdown">О библиотеке</a>
-        </li>
+        <li class="header__item"><a id="header__dropdown">О библиотеке</a></li>
         <li class="header__item"><a>Сотрудничество</a></li>
         <li class="header__item"><a>Ресурсы</a></li>
         <li class="header__item"><a>Электронный каталог</a></li>
         <li class="header__item"><a>Ссылки</a></li>
         <li class="header__item"><a>Авторизация</a></li>
       </ul>
+
+      <div class="header__burger-search">
+        <form
+          action="https://vlib.by/index.php/ru/component/search/"
+          method="post"
+          class="header__search-block"
+        >
+          <input
+            type="search"
+            class="header__search"
+            name="searchword"
+            maxlength="20"
+            placeholder="Поиск..."
+          />
+        </form>
+
+        <button class="burger" aria-label="Меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </header>
+
+    <script src="../faq-scripts/faq-script.js"></script>
   </body>
 </html>
