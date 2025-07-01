@@ -210,7 +210,23 @@
   box-shadow: 0 0 5px 1.5px rgb(77, 77, 77);
 }
 
-@media screen and (max-width: 1330px) {
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header__search {
+  padding-left: 30px;
+}
+
+i {
+  position: absolute;
+  left: 10px;
+  color: #aaa;
+}
+
+@media screen and (max-width: 1400px) {
   .header__language {
     margin-left: 0;
   }
@@ -294,11 +310,13 @@
   .header__burger-search {
     width: auto;
     max-width: none;
+    background-color: rgb(27, 27, 47);
   }
 
   .header__search-block {
     flex-grow: 1;
     margin-right: 10px;
+    background-color: rgb(27, 27, 47);
   }
 
   .header__search {
