@@ -222,7 +222,7 @@
   }
 
   .header__list {
-    overflow: none !important;
+    overflow: none;
   }
   .dropdown-menu {
     padding-bottom: 20px;
@@ -294,6 +294,7 @@
 
   .header__list.active {
     max-height: 500px;
+    overflow: visible;
   }
 
   .header__item {
