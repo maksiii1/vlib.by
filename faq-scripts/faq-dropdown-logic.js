@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
   dropdownToggles.forEach((toggle) => {
     const dropdown = toggle.closest(".dropdown");
 
-    toggle.addEventListener("click", (e) => {
+    toggle.addEventListener("click", (event) => {
       if (window.innerWidth <= 1130) {
-        e.preventDefault();
+        event.preventDefault();
         dropdowns.forEach((dd) => {
           if (dd !== dropdown) dd.classList.remove("active");
         });
@@ -36,9 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const link = submenu.querySelector("a");
     if (!link) return;
 
-    link.addEventListener("click", (e) => {
+    link.addEventListener("click", (event) => {
       if (window.innerWidth <= 1130) {
-        e.preventDefault();
+        event.preventDefault();
         const parentDropdown = submenu.closest(".dropdown");
         if (parentDropdown) {
           const siblings = parentDropdown.querySelectorAll(".has-submenu");
@@ -51,8 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  document.addEventListener("click", (e) => {
-    if (!menu.contains(e.target) && !burger.contains(e.target)) {
+  document.addEventListener("click", (event) => {
+    if (!menu.contains(event.target) && !burger.contains(event.target)) {
       closeAllMenus();
     }
   });
