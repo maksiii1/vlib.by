@@ -332,7 +332,6 @@ i {
 }
 
 .sidebar {
-  display: none;
   flex-direction: column;
   gap: 15px;
   width: 400px;
@@ -362,6 +361,26 @@ i {
   border-left: 4px solid #5a8dee;
   padding-left: 12px;
   transition: background-color 0.3s ease, border-left 0.3s ease;
+}
+
+@media (max-width: 1023px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: -60px !important;
+  }
+
+  .sidebar a {
+    width: 200px;
+  }
 }
 
 @media (min-width: 1024px) {

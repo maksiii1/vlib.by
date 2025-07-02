@@ -47,7 +47,7 @@
   <body>
     <header class="header">
       <div class="header__imgs">
-        <a href="https://vlib.by/index.php/ru/">
+        <a href="https://vlib.by/index.php/ru/" target="_blank">
           <img src="../faq-imgs/logo.png" id="header__logo1" alt="logo" />
           <img src="../faq-imgs/logo2.png" id="header__logo2" alt="logo" />
         </a>
@@ -296,6 +296,7 @@
           id="faq-search"
           placeholder="Поиск вопроса..."
           class="faq-search-input"
+          autocomplete="off"
         />
         <div class="faq-container">
           <div class="faq-item">
@@ -630,7 +631,11 @@
         </div>
       </section>
 
-      <nav class="sidebar" aria-label="Боковое меню с изображениями">
+      <nav
+        class="sidebar"
+        id="sidebar"
+        aria-label="Боковое меню с изображениями"
+      >
         <a
           href="https://pravo.by/gosudarstvo-i-pravo/gosudarstvennaya-simvolika/gosudarstvennye-simvoly/"
           target="_blank"
@@ -733,5 +738,6 @@
     <script src="../faq-scripts/faq-dropdown-logic.js"></script>
     <script src="../faq-scripts/faq-answers-logic.js"></script>
     <script src="../faq-scripts/search-logic.js"></script>
+    <script src="../faq-scripts/aside-swap-logic.js"></script>
   </body>
 </html>
