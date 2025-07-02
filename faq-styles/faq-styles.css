@@ -8,7 +8,7 @@ body {
   background-image: url("https://vlib.by/templates/jp_model_agency_v4/images/texture.jpg") !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-attachment: fixed !important; /* фиксируем фон при скролле */
+  background-attachment: fixed !important;
 }
 
 .header {
@@ -58,7 +58,7 @@ body {
 
 .header__item a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   cursor: pointer;
   position: relative;
@@ -71,7 +71,7 @@ body {
   width: 0;
   left: 50%;
   height: 2px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   transition: width 0.3s ease, left 0.3s ease;
 }
 
@@ -102,7 +102,7 @@ body {
   font-size: 14px;
   width: 250px;
   outline: none;
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
   height: 35px;
   border-radius: 3px;
   transition: all 0.1s;
@@ -130,7 +130,7 @@ body {
 .burger span {
   width: 100%;
   height: 3px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -162,7 +162,7 @@ body {
 }
 
 .dropdown-menu li a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 10px 20px;
   display: block;
@@ -202,7 +202,7 @@ body {
 
 .header__language select {
   background-color: rgb(27, 27, 47);
-  color: white;
+  color: rgb(255, 255, 255);
   border-radius: 3px;
   height: 35px;
   padding: 0 8px;
@@ -230,7 +230,7 @@ body {
 i {
   position: absolute;
   left: 10px;
-  color: #aaa;
+  color: rgb(179, 179, 179);
 }
 
 .faq-section {
@@ -238,7 +238,7 @@ i {
   margin: 40px auto 0;
   padding: 0 15px;
   font-family: Arial, sans-serif;
-  color: #222;
+  color: rgb(38, 38, 38);
 }
 
 .faq-title {
@@ -251,19 +251,19 @@ i {
 
 .faq-container {
   border-radius: 8px;
-  background-color: #f9f9f9;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
   overflow: hidden;
 }
 
 .faq-item + .faq-item {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid rgb(223, 223, 223);
 }
 
 .faq-question {
   width: 100%;
   text-align: left;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   border: none;
   padding: 18px 20px;
   font-size: 1.1rem;
@@ -296,8 +296,8 @@ i {
   padding: 0 20px;
   font-size: 1rem;
   line-height: 1.5;
-  background-color: #fff;
-  color: #444;
+  background-color: rgb(255, 255, 255);
+  color: rgb(68, 68, 68);
   transition: max-height 0.4s ease, padding 0.4s ease;
   text-align: justify;
 }
@@ -312,7 +312,7 @@ i {
 }
 
 .a-period {
-  color: #1a73e8;
+  color: rgb(26, 115, 232);
   text-decoration: none;
   font-weight: 600;
 }
@@ -344,7 +344,7 @@ i {
   margin: 20px auto 30px;
   padding: 12px 16px;
   font-size: 16px;
-  border: 2px solid #ccc;
+  border: 2px solid rgb(204, 204, 204);
   border-radius: 8px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   box-sizing: border-box;
@@ -352,15 +352,204 @@ i {
 
 .faq-search-input:focus {
   outline: none;
-  border-color: #5a8dee;
+  border-color: rgb(90, 141, 238);
   box-shadow: 0 0 5px rgba(90, 141, 238, 0.5);
 }
 
 .faq-question.highlighted {
-  background-color: #eef4ff;
-  border-left: 4px solid #5a8dee;
+  background-color: rgb(255, 255, 255);
+  border-left: 4px solid rgb(90, 141, 238);
   padding-left: 12px;
   transition: background-color 0.3s ease, border-left 0.3s ease;
+}
+
+.footer {
+  background-color: rgb(27, 27, 47);
+  color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  padding: 40px 20px 60px;
+  font-size: 14px;
+  margin-top: 200px;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer__column {
+  flex: 1 1 30%;
+  min-width: 260px;
+}
+
+.footer__title {
+  color: rgb(240, 165, 0);
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.footer__list li {
+  padding-left: 8px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.footer__list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: rgb(240, 165, 0);
+  font-weight: bold;
+}
+
+.footer__links {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.footer__links li a {
+  color: rgb(234, 234, 234);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer__links li a:hover {
+  color: rgb(240, 165, 0);
+  text-decoration: underline;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(240, 165, 0, 0.6);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: all 0.3s;
+}
+
+.social-icon:hover img {
+  transform: scale(1.2);
+}
+
+.footer__photos {
+  max-width: 1200px;
+  margin: 10px auto 0;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.footer__photos a {
+  flex: 1 1 23%;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  display: block;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+}
+
+.footer__photos a:hover {
+  box-shadow: 0 0 3px 0 rgba(240, 165, 0, 0.7);
+  transform: scale(1.001);
+}
+
+.footer__photos img {
+  display: block;
+  width: 100%;
+  height: 100px;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.footer__photos a:hover img {
+  transform: scale(1.08);
+}
+
+.footer__bottom {
+  border-top: 1px solid rgb(78, 78, 78);
+  margin-top: 60px;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 13px;
+  color: rgb(159, 159, 159);
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .footer__container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer__column {
+    min-width: 100%;
+  }
+
+  .footer__photos {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .footer__photos a {
+    flex: 1 1 48%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__photos img {
+    width: 100%;
+    height: 120px;
+  }
+
+  .footer__photos a {
+    flex: 1 1 100%;
+  }
+
+  .footer__socials {
+    font-size: 18px;
+    letter-spacing: 8px;
+  }
 }
 
 @media (max-width: 1123px) {
@@ -375,6 +564,7 @@ i {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    margin-top: 20px;
   }
 
   .sidebar a {
