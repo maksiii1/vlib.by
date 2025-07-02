@@ -3,7 +3,7 @@ function moveSidebar() {
   const faqContainer = document.querySelector(".faq-container");
   const parent = faqContainer.parentNode;
 
-  if (window.innerWidth < 1023) {
+  if (window.innerWidth < 1123) {
     if (sidebar.parentNode !== parent) {
       parent.appendChild(sidebar);
     }

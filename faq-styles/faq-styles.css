@@ -235,7 +235,7 @@ i {
 
 .faq-section {
   max-width: 70%;
-  margin: 40px auto 80px;
+  margin: 40px auto 0;
   padding: 0 15px;
   font-family: Arial, sans-serif;
   color: #222;
@@ -363,7 +363,7 @@ i {
   transition: background-color 0.3s ease, border-left 0.3s ease;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1123px) {
   .content-wrapper {
     flex-direction: column;
   }
@@ -373,9 +373,8 @@ i {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 10px;
     justify-content: center;
-    margin-top: -60px !important;
   }
 
   .sidebar a {
@@ -383,7 +382,7 @@ i {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1124px) {
   .sidebar {
     display: flex;
     position: relative;
@@ -408,11 +407,14 @@ i {
   display: block;
 }
 
+.sidebar a:hover {
+  box-shadow: 0 0 7px 7px rgba(197, 197, 197, 0.3);
+}
+
 .sidebar a:hover img,
 .sidebar a:focus img {
   transform: scale(1.07);
   z-index: 10;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 1400px) {
