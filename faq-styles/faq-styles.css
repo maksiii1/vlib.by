@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("https://vlib.by/templates/jp_model_agency_v4/images/texture.jpg") !important;
+  background-image: url("../faq-imgs/bg-img.jpg") !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-attachment: fixed !important;
@@ -719,12 +719,13 @@ i {
     overflow: hidden;
     transition: max-height 0.3s ease;
     z-index: 1000;
-    padding: 0 15px 7px 15px;
+    padding: 0 15px 0 15px;
   }
 
   .header__list.active {
     max-height: 500px;
     overflow: visible;
+    padding: 0 15px 7px 15px;
   }
 
   .header__item {
