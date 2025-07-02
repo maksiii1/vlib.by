@@ -335,14 +335,14 @@ i {
   display: none;
   flex-direction: column;
   gap: 15px;
-  width: 100px;
+  width: 400px;
 }
 
 @media (min-width: 1024px) {
   .sidebar {
     display: flex;
-    position: sticky;
-    top: 20px;
+    position: relative;
+    top: 100px;
     height: fit-content;
   }
 }
@@ -357,15 +357,15 @@ i {
 
 .sidebar img {
   width: 100%;
-  height: 80px;
-  object-fit: cover;
+  height: 110px;
+  object-fit: contain;
   transition: transform 0.3s ease;
   display: block;
 }
 
 .sidebar a:hover img,
 .sidebar a:focus img {
-  transform: scale(1.15);
+  transform: scale(1.07);
   z-index: 10;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
