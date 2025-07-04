@@ -517,15 +517,20 @@ i {
   font-style: italic;
 }
 
-.visually-impaired-link {
+.visually-impaired-block {
   position: relative;
-  right: 0;
-  display: flex;
-  justify-content: flex-end;
+  height: 50px;
+}
+
+.visually-impaired-link {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  display: inline-flex;
   text-decoration: none;
-  margin: 15px 20px;
   cursor: pointer;
   outline-offset: 3px;
+  margin: 0;
 }
 
 .visually-impaired-box {
