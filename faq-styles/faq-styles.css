@@ -529,7 +529,6 @@ i {
   display: inline-flex;
   text-decoration: none;
   cursor: pointer;
-  outline-offset: 3px;
   margin: 0;
 }
 
@@ -538,21 +537,24 @@ i {
   align-items: center;
   border-radius: 8px;
   padding: 8px 15px;
-  max-width: 320px;
-  user-select: none;
+  max-width: 3420px;
   border: 1px solid rgb(219, 219, 219);
   box-shadow: 0 0 3px rgb(214, 214, 214);
 }
 
+img {
+  border-radius: 8px;
+}
+
 .visually-impaired-box img {
-  width: 100%;
+  width: 250px;
   height: auto;
   object-fit: contain;
   transition: all 0.3s;
 }
 
 .visually-impaired-box:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 @media (max-width: 900px) {
