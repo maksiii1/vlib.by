@@ -238,14 +238,14 @@ i {
   margin: 40px auto 0;
   padding: 0 15px;
   font-family: Arial, sans-serif;
-  color: rgb(38, 38, 38);
+  color: rgb(0, 0, 0);
 }
 
 .faq-title {
   font-size: 2rem;
   margin-bottom: 25px;
   text-align: center;
-  color: rgb(27, 27, 47);
+  color: rgb(0, 0, 0);
   font-weight: 700;
 }
 
@@ -722,7 +722,7 @@ img {
   .header__burger-search {
     width: auto;
     max-width: none;
-    background-color: rgb(27, 27, 47);
+    background-color: rgb(0, 0, 0);
   }
 
   .header__search-block {
